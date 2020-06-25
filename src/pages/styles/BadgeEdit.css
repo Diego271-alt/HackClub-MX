@@ -1,0 +1,77 @@
+.BadgeEdit__hero {
+    width: calc(100% -  50px);
+    padding: 2rem 0;
+    background: url('../../IMAGES/fonds.gif'), #1B1B25;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    height: 420px;
+    border-radius: 50px;
+    z-index: 0;
+  }
+
+
+ .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   width: 400px;
+   border-radius: 50px;
+   height: 650px;
+   border: 0.5px solid #f1c40f;
+    margin-bottom: 20px;
+    color: #fff;
+
+   background: linear-gradient(166deg, rgba(241,196,15,1) 0%, rgba(255,140,55,1) 100%);
+
+ }
+ .container-view{
+   display: flex;
+   justify-content: center;
+
+
+ }
+
+
+
+
+
+ .formulario .title{
+   margin-bottom: 15px;
+    text-align: center;
+    font-size: 50px;
+    z-index: 3;
+    border-bottom: 2px solid #ec3750;
+
+  }
+ .form-group {
+   width: 100%;
+   text-align: center;
+
+ }
+
+ .form-group input{
+
+   width: 350px;
+   
+   
+ }
+
+ 
+ .formulario input:active{
+   border: 1px solid #ec3750;
+ }
+
+ .form-group input:placeholder-shown{
+   text-align: center;
+   color: #ec3750;
+   
+ }
+
+ button{
+   margin: 0 auto;
+ }
+
