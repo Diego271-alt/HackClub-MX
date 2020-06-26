@@ -1,0 +1,26 @@
+.BadgeDetails__hero {
+    width: 100%;
+    padding: 2rem 0;
+    height: 500px;
+    background: url('../../IMAGES/hackhero.png'), #1B1B25;
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    margin-bottom: 1rem;
+
+  }
+  .BadgeDetails__hero img{
+      width: 400px;
+      height: 400px;
+  }
+  .BadgeDetails__hero-attendant-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#fff;
+  }
+  
+  .BadgeDetails__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
