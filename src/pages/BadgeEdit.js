@@ -13,8 +13,9 @@ class BadgeEdit extends React.Component{
 
     //vamos a levantar el estado y con esto nos referimos a que vamos a conseguir que 
     //lo que se escribe en los forms se traslade aca
+    //como vamos a inicializar el estado en peticion se usa true
     state = {
-        loading: false,
+        loading: true,
         error: null,
         //es una propiedad para inicarla
         form: {
@@ -28,7 +29,34 @@ class BadgeEdit extends React.Component{
         },
 
     }
+
+    componentDidMount(){
+        this.fetchData();
+    }
     
+
+    fetchData = async e =>{
+        this.setState({loading:true,error:null})
+        try{
+            //read es el  metodo que nos va tomar el id del batch 
+            const data= await api.badges.read(
+                            /*pdado que nuestro id esta en el URL necesitamos leelo 
+            y lo vamos a  usar un prop que los route le pasan a los componentes*/
+                this.props.match.params.badgeId
+
+            )
+            /*si los datos funcionan se guardan en set statet loading y en lugar de guardarlos dentro del data los vamos a meter al form */
+            this.setState({loading:false, form:data})
+
+        }catch(error){
+            this.setState({loading:false , error:error})
+
+        }
+
+
+
+
+    } 
     handleChange = e =>{
 
         //lo que esta generando esto así tal cual es que solo se guarde un valor y los demas se sobre escriban
@@ -67,7 +95,7 @@ class BadgeEdit extends React.Component{
         e.preventDefault();
         this.setState({loading:true, error:null});
         try{
-            await api.badges.create(this.state.form)
+            await api.badges.update(this.props.match.params.badgeId, this.state.form)
             this.setState({loading:false});
             //este es un prop que las rutas de react router reciben 
             /*en esre caso lo que estamos haciendo es 
@@ -114,6 +142,9 @@ class BadgeEdit extends React.Component{
                     </div>
 
                     <div className ="col-6"> 
+                    <h1 className="title">
+                    Edit Attendant
+                    </h1>
                     <BadgeForm  
                         onChange={this.handleChange} 
                         formValues={this.state.form}

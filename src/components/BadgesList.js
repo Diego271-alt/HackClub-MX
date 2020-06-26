@@ -27,7 +27,13 @@ class BadgesList extends React.Component{
                 caso un li con un p */
                 return(
                     <li key={badge.id}>
-                        <div className="containerli">
+                        
+                        <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/edit`}>
+
+
+
+                     
+                        <div  className="containerli">
                             <Gravatar email={badge.email} />
                             <div className="containerli__info">
                                 <h2>{badge.firstName} {badge.lastName}</h2>
@@ -40,6 +46,7 @@ class BadgesList extends React.Component{
 
 
                         </div>
+                        </Link>
 
 
                     </li>

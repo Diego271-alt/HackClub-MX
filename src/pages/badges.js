@@ -23,7 +23,15 @@ class Badges extends React.Component{
   //el mejor lugar para iniciar una api es el metodo siguiente ya que aquí estamos seguros que el coidgo que la pag ya fue cargado al dom
   componentDidMount () {
     //es un metodo donde se llama la api
-    this.fetchData()
+    this.fetchData();
+
+    this.intervalId=setInterval(this.fetchData, 5000);
+
+  }
+
+
+  componentWillUnmount(){
+    clearInterval(this.intervalId)
 
   }
   //metodo 
@@ -141,7 +149,7 @@ class Badges extends React.Component{
 
     render(){
 
-      if(this.state.loading === true){
+      if(this.state.loading === true && !this.state.data){
         return <PageLoading />;
       }
       if(this.state.error){
@@ -171,6 +179,7 @@ class Badges extends React.Component{
 
 
                 </div>
+                {this.state.loading && 'Loding...'}
 
             </React.Fragment>
 

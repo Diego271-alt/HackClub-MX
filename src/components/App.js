@@ -25,6 +25,11 @@ function App(){
         /* queremos que el layout tenga contendio propio e interno lo escribiramos de esta forma
         para lograr que el swith se muestre dentro se usa un prop especial 
         llamado children*/
+
+        /*en el caso del cuarto path el de edit 
+        este tiene que trabar sobre un id especifico 
+        el badgeid será un valor generico pero 
+        la url se tiene hacer de esa forma para poder usar ese contenido  */
         <BrowserRouter>
 
      
@@ -33,7 +38,7 @@ function App(){
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/badges" component={Badges}/>
                 <Route exact path="/badges/new" component={BadgesNew}/>
-                <Route exact path="/badges/:badgeIde/edit" component={BadgeEdit}/>
+                <Route exact path="/badges/:badgeId/edit" component={BadgeEdit}/>
                 <Route component={NotFound} />
             </Switch>
         </Layout>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import img1 from '../IMAGES/h1.jpg'
 
 function FirstContainer(){
 
@@ -7,21 +7,17 @@ function FirstContainer(){
     return(
         <div className="container-grid">
         <div className="container-Felement" >
-            <div className="imgF1"></div>
-            <div className="infoF1">
-                <div className="titleF1">
-                <h3>Events</h3>
-                    </div>
-                <div className="pF1">
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non arcu non felis vestibulum auctor eu in sapien. Pellentesque sed semper nisl. Docidunt. Morbi ac nisl eu felis eleifend vulputate in in dolor. Aenean suscipit erat sapien, non aliquet neque ullamcorper e.
-                    
-                </p>
+            <figure>
+                <img src={img1} className="frontal"/>
+                <figcaption className="trasera">
+                    <h2>Hola mundo </h2>
 
-                </div>
+                </figcaption>
 
+            </figure>
 
-            </div>
+            
+
         </div>
         <div className="container-Selement" >
             <div className="imgS1"></div>
