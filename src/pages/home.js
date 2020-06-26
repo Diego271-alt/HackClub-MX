@@ -12,7 +12,7 @@ class Home extends React.Component{
         return(
             <React.Fragment>
                 <div className="stick-btn">
-                    <Link  to='/badges/new' className="btn btn-primary">UNETE</Link>
+                    <Link  to='/badges/new' className="btn btn-primary">Come on</Link>
                 </div>
                 <div className="overlay" ></div>
                 <div className="parallax-completo">
