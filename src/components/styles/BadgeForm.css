@@ -3,22 +3,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-   width: 400px;
+   width: 500px;
    border-radius: 50px;
    height: 650px;
-   
+   margin-left: 50px;
     margin-bottom: 20px;
     color: #fff;
-
+    border: 1px solid #fff;
     background: rgba(23, 23, 29, 0.9);
+    box-shadow: 0px 2px 36px 9px rgba(0,0,0,0.97);
 
  }
- .container-view{
-   display: flex;
-   justify-content: center;
 
-
- }
 
 
 
@@ -29,33 +25,28 @@
     text-align: center;
     font-size: 50px;
     z-index: 3;
-    border-bottom: 2px solid #ec3750;
+    border-bottom: 3px solid #f1c40f;
+    
 
   }
  .form-group {
    width: 100%;
    text-align: center;
-
+   
  }
 
  .form-group input{
 
    width: 350px;
+   box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
    
    
  }
 
  
- .formulario input:active{
-   border: 1px solid #ec3750;
- }
 
- .form-group input:placeholder-shown{
-   text-align: center;
-   color: #ec3750;
-   
- }
 
  button{
    margin: 0 auto;
+   box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
  }

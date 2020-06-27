@@ -28,20 +28,16 @@ class BadgesList extends React.Component{
                 return(
                     <li key={badge.id}>
                         
-                        <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/details`}>
-
-
-
-                     
+                        <Link className="text-reset text-decoration-none" to={`/badges/${badge.id}/details`}>                     
                         <div  className="containerli">
                             <Gravatar email={badge.email} />
                             <div className="containerli__info">
-                                <h2>{badge.firstName} {badge.lastName}</h2>
-                                <h3>{badge.jobTitle}</h3>
+                                <h2>💎 {badge.firstName} {badge.lastName}</h2>
+                                <h3>🎓 -- {badge.jobTitle} --</h3>
                             </div>
                             <div className="contact" >
                                     <img src={logoT} />
-                                    <p>@{badge.twitter}</p>
+                                    <p>@{badge.twitter} </p>
                             </div>
 
 
