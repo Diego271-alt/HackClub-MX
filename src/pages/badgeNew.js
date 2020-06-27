@@ -2,10 +2,11 @@ import React from 'react';
 
  import Bagde from '../components/Badges'
  import BadgeForm from '../components/BadgeForm.js'
-import '../pages/styles/BadgeNew.css'
+ import '../pages/styles/BadgeNew.css'
 import api from '../api'
 import { Link } from 'react-router-dom';
 import PageLoading from '../components/pageLoading'
+import img1 from '../IMAGES/hackmap.png'
 
 /*en este codigo es muy sencillo entender que jobtitle y los demas son props de REACT que se pasan y se imprimen ahí de esta forma 
 lo que estamos haciendo es ir pasando varoles especificos */
@@ -97,6 +98,7 @@ class BadgeNew extends React.Component{
         <React.Fragment>
          
             <div className="BadgeNew__hero">
+                <img src={img1}/>
             </div>
             <div className="container">
                 <div className="row">
@@ -114,9 +116,7 @@ class BadgeNew extends React.Component{
                     </div>
 
                     <div className ="col-6"> 
-                    <h1 className="title">
-                    New Comment
-                </h1>
+
                     <BadgeForm  
                         onChange={this.handleChange} 
                         formValues={this.state.form}

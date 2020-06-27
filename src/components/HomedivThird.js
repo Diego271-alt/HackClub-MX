@@ -11,13 +11,13 @@ function ThirdContainer (){
                     </div>
                     <div className="Topics">
                         <div className="one">
-                            <h2>#Code</h2>
+                            <h2>#Code 🚀</h2>
                         </div>
                         <div className="two">
-                            <h2>#Comunity</h2>
+                            <h2>#Community 👥</h2>
                         </div>
                         <div className="three">
-                            <h2>#Design</h2>
+                            <h2>#Design 🌠</h2>
                         </div>
                         
                     </div>

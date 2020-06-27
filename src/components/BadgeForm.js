@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../components/styles/BadgeForm.css'
 
 class BadgeForm extends React.Component{
     //debemos inicializar el estaod de esta manera
@@ -55,7 +56,9 @@ class BadgeForm extends React.Component{
             <div className="formulario">
 
                 <form onSubmit={this.props.onSubmit} >
-
+                <h1 className="title">
+                    New Comment
+                </h1>
                     <div className="form-group">
                         <label >First Name</label>
                          <input placeholder="Hack Club" onChange={this.props.onChange} 

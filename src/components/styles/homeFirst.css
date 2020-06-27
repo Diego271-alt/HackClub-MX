@@ -1,0 +1,111 @@
+
+
+
+#first{
+    display: grid;
+    grid-area: element1;
+    
+}
+
+#first .trasera{
+    background: rgba(153,139,40,0.75);
+    background: -moz-linear-gradient(top, rgba(153,139,40,0.75) 0%, rgba(172,129,52,0.75) 24%, rgba(207,112,73,0.7) 68%, rgba(232,99,88,0.7) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,139,40,0.75)), color-stop(24%, rgba(172,129,52,0.75)), color-stop(68%, rgba(207,112,73,0.7)), color-stop(100%, rgba(232,99,88,0.7)));
+    background: -webkit-linear-gradient(top, rgba(153,139,40,0.75) 0%, rgba(172,129,52,0.75) 24%, rgba(207,112,73,0.7) 68%, rgba(232,99,88,0.7) 100%);
+    background: -o-linear-gradient(top, rgba(153,139,40,0.75) 0%, rgba(172,129,52,0.75) 24%, rgba(207,112,73,0.7) 68%, rgba(232,99,88,0.7) 100%);
+    background: -ms-linear-gradient(top, rgba(153,139,40,0.75) 0%, rgba(172,129,52,0.75) 24%, rgba(207,112,73,0.7) 68%, rgba(232,99,88,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(153,139,40,0.75) 0%, rgba(172,129,52,0.75) 24%, rgba(207,112,73,0.7) 68%, rgba(232,99,88,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#998b28', endColorstr='#e86358', GradientType=0 );
+   
+}
+
+#second{
+    display: grid;
+    grid-area: element2;
+    
+}
+
+#second .trasera{
+    
+background: rgba(130,112,97,0.75);
+background: -moz-linear-gradient(top, rgba(130,112,97,0.75) 0%, rgba(113,95,81,0.75) 24%, rgba(82,65,52,0.7) 68%, rgba(60,43,31,0.7) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(130,112,97,0.75)), color-stop(24%, rgba(113,95,81,0.75)), color-stop(68%, rgba(82,65,52,0.7)), color-stop(100%, rgba(60,43,31,0.7)));
+background: -webkit-linear-gradient(top, rgba(130,112,97,0.75) 0%, rgba(113,95,81,0.75) 24%, rgba(82,65,52,0.7) 68%, rgba(60,43,31,0.7) 100%);
+background: -o-linear-gradient(top, rgba(130,112,97,0.75) 0%, rgba(113,95,81,0.75) 24%, rgba(82,65,52,0.7) 68%, rgba(60,43,31,0.7) 100%);
+background: -ms-linear-gradient(top, rgba(130,112,97,0.75) 0%, rgba(113,95,81,0.75) 24%, rgba(82,65,52,0.7) 68%, rgba(60,43,31,0.7) 100%);
+background: linear-gradient(to bottom, rgba(130,112,97,0.75) 0%, rgba(113,95,81,0.75) 24%, rgba(82,65,52,0.7) 68%, rgba(60,43,31,0.7) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#827061', endColorstr='#3c2b1f', GradientType=0 );
+
+}
+
+#third{
+    display: grid;
+    grid-area: element3;
+}
+
+#third .trasera{
+    background: rgba(68,74,126,0.75);
+background: -moz-linear-gradient(top, rgba(68,74,126,0.75) 0%, rgba(101,68,110,0.75) 24%, rgba(160,56,80,0.7) 68%, rgba(204,48,58,0.7) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,74,126,0.75)), color-stop(24%, rgba(101,68,110,0.75)), color-stop(68%, rgba(160,56,80,0.7)), color-stop(100%, rgba(204,48,58,0.7)));
+background: -webkit-linear-gradient(top, rgba(68,74,126,0.75) 0%, rgba(101,68,110,0.75) 24%, rgba(160,56,80,0.7) 68%, rgba(204,48,58,0.7) 100%);
+background: -o-linear-gradient(top, rgba(68,74,126,0.75) 0%, rgba(101,68,110,0.75) 24%, rgba(160,56,80,0.7) 68%, rgba(204,48,58,0.7) 100%);
+background: -ms-linear-gradient(top, rgba(68,74,126,0.75) 0%, rgba(101,68,110,0.75) 24%, rgba(160,56,80,0.7) 68%, rgba(204,48,58,0.7) 100%);
+}
+
+
+.container-cards:hover figure{
+    transform: perspective(600px) rotateY(180deg);
+    
+    border-radius: 40px 40px 40px 40px;
+
+    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+}
+
+
+.container-cards figure{
+    width: 400px;
+    height: 100%;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+   
+    
+}
+
+figure .frontal,
+figure .trasera{
+    width: 100%;
+    height: 100%;
+
+    transition: all ease .5s;
+    border-radius: 40px 40px 40px 40px;
+}
+
+figure .frontal{
+    display: block;
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.75);
+    
+
+}
+    
+
+figure .trasera{
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+    border-radius: 40px 40px 40px 40px;
+}
+
+
+.container-cards .frontal{
+    width:inherit;
+    height: inherit;
+}
+
+
+

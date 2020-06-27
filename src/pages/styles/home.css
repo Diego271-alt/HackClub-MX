@@ -85,13 +85,15 @@
     width: 100%;
     height: 500px;
     background: rgba(23, 23, 29, 0.9);
-    grid-template-columns: 1fr 500px;
+    
+    grid-template-rows: 100px 1fr;
     
 
    
-    grid-template-areas: 'element1 element2';
+    grid-template-areas: 'title ' 
+                        'elements';
    
-    column-gap: 20px;
+    
     box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.2);
 
   
@@ -99,201 +101,83 @@
   
 }
 
+.container-grid .cards{
+    display: grid;
+    grid-area: elements;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'element1 element2 element3';
+    
+}
 
-.container-grid .container-Felement{
+
+
+
+.container-grid .container-cards{
 
     display: grid;
-    grid-area: element1;
+  
 
-    width: 600px;
+    width: 400px;
     margin:0 auto;
-    background: rgba(23, 23, 29, 0.9);
+    height: 300px;
+  
     border-radius: 40px 40px 40px 40px;
     margin-bottom: 15px; 
-    margin-top: 15px;
-}
+    margin-top: 50px;
 
-.container-Felement figure{
-    width: 600px;
-    height: 100%;
-    position: relative;
-    transition: all ease .5s;
-    transform-style: preserve-3d;
-    transform: perspective(600px) rotateY(0deg);
 }
+.container-grid .TitleGeneral{
+    display: grid;
+    grid-area: title;
 
-figure .frontal,
-figure .trasera{
     width: 100%;
-    height: 100%;
-
-    transition: all ease .5s;
-
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f9fafc;
 }
 
-figure .frontal{
-    display: block;
-    
-
-}
-    
-
-figure .trasera{
-    position: absolute;
-    top: 0;
-    padding: 30px;
-    transform: perspective(600px) rotateY(180deg);
-}
-
-
-.container-Felement .frontal{
-    width:inherit;
-    height: inherit;
-}
-
-
-
-
-
-
-
-.container-grid .container-Selement{
-    display: grid;
-    grid-area: element2;
-    grid-template-rows: 1fr 50px 1fr 50px;
-    grid-template-areas: 'img'
-                          'content'
-                          'img2'
-                          'content2';
-    width: calc(100% - 20px);
-    margin:0 auto;
-   
+.TitleGeneral h1{
+    letter-spacing: 10px;
+    font-size: 50px;
+    color: #f9fafc;
+    margin-top: 20px;
  
-   
-    
-    
 }
 
-.container-Selement .imgS1{
-
-    margin-top: 5px;
-    width: 400px;
+.TitleGeneral{
     display: grid;
-    grid-area: img;
-    background-image: url('../../IMAGES/h2.jpg');
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 40px 40px 0px 0px;
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
-   
+    grid-area: title;
 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f9fafc;
 }
-.container-Selement .imgS2{
-    margin-top: 5px;
-    width: 400px;
-    display: grid;
-    grid-area: img2;
-    background-image: url('../../IMAGES/h3.jpg');
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: 40px 40px 0px 0px;
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
 
-}
-.container-Selement .infoS1{
-    display: grid;
-    width: 400px;
-    grid-area: content;
-    background: rgba(60, 72, 88, 0.81);
-    border-radius: 0px 0px 40px 40px;
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
-    
-} 
 
-.container-Selement .infoS2{
-    display: grid;
-    width: 400px;
-    grid-area: content2;
-    background:rgba(51, 214, 166, 0.81);
-    border-radius: 0px 0px 40px 40px;
-    margin-bottom: 5px;
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
-    
-} 
+
+
+
 
 .container-subgrid{
-    background: linear-gradient(166deg, rgba(241,196,15,0.9) 0%, rgba(255,140,55,0.9) 100%);
+    background: rgba(23, 23, 29, 0.9);
     width: 100%;
     height: 650px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:'img content' ;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas:' title' 
+                        'content';
     box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
 
 }
 
-.container-subgrid .imgSub1{
-    margin-top: 10px;
-    margin-left:10px;
-    margin-bottom: 10px;
-    display: grid;
-    grid-area: img;
-    background-image: url('../../IMAGES/manhack.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 40px 0px 0px 40px;
-    margin: 15px 0px 15px 15px;
-    background-repeat: no-repeat;
-
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
-
-}
-
-.container-subgrid .infoSub1{
-
-    display: grid;
-    grid-area: content;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas: 'title'
-                         'content';
-   
-   
-    margin-bottom:10px;
-    margin: 15px 15px 15px 0px;
 
 
 
-}
 
-.infoSub1 .titleSub1{
-    display: grid;
-    grid-area: title;
-    text-align: center;
-    
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 40px 10px 0px;
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
-    color: #f9fafc;
-    background:rgba(51, 214, 166, 0.81);
 
-}
 
-.infoSub1 .pSub1{
-    display: grid;
-    grid-area: content;
-    text-align: center;
-    background:rgba(51, 214, 166, 0.81);
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 10px 40px 0px;
-    box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
-    color: #f9fafc;
-    margin-top: 5px;
 
-}
 
 .container-gridF{
     display: grid;
@@ -301,7 +185,7 @@ figure .trasera{
     grid-template-areas: 'img1 topics  img2';
     width: 100%;
     height: 600px;
-    background: linear-gradient(166deg, rgba(241,196,15,0.9) 0%, rgba(255,140,55,0.9) 100%);
+    background: rgba(23, 23, 29, 0.9);
     box-shadow: 0px 2px 22px 4px rgba(0,0,0,0.75);
 
 }
@@ -366,10 +250,10 @@ figure .trasera{
    
     justify-content: center;
    align-items: center;
-   background:rgba(51, 214, 166, 0.81);
-
-    border-radius: 40px 40px 40px 40px;
-    width: 300px;
+  
+   background: rgba(236, 55, 80, 0.3);
+    border-radius:40px 40px 40px 40px;
+    width: 350px;
     height: 100px;
     box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
 }
@@ -377,13 +261,15 @@ figure .trasera{
 .Topics .two{
     display: grid;
     grid-area: two;
-
-    background: rgba(51, 142, 218, 0.81);
+    background: rgba(236, 55, 80, 0.8);
+    
     justify-content: center;
    align-items: center;
-    border-radius: 40px 40px 40px 40px;
-    
-    width: 300px;
+   background: rgba(236, 55, 80, 0.5);
+   
+    margin: 0 auto;
+    border-radius:40px 40px 40px 40px;
+    width: 350px;
     height: 100px;
     box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
 }
@@ -393,12 +279,19 @@ figure .trasera{
     grid-area: three;
     justify-content: center;
     align-items: center;
-    background: rgba(60, 72, 88, 0.8);
-    border-radius: 40px 40px 40px 40px;
-    width: 300px;
+    background: rgba(236, 55, 80, 0.9);
+  
+    border-radius:40px 40px 40px 40px;
+
+    width: 350px;
     
     height: 100px;
     box-shadow: 0px 2px 9px 0px rgba(0,0,0,0.75);
+}
+
+.two h2 , .three h2 , .one h2{
+    font-size: 50px;
+
 }
 
 h2, h3{

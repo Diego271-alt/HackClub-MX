@@ -1,18 +1,35 @@
 import React from 'react'
+import '../components/styles/homeSecond.css'
 
 function SecondContainer (){
 
 
-    return (              <div className="container-subgrid">
-    <div className="imgSub1"></div>
-    <div className="infoSub1">
-     <div className="titleSub1">
-            <h3>PEOPLE</h3>
+    return (
+    <div className="container-subgrid">
+
+            <div className="TitleGeneral">
+                <h1> 📱 Hack Club Community 💻</h1>
+            </div>
+        
+        <div className="contentgeneral">
+            <div className="videogrid">
+                <iframe width="600" height="400" src="https://www.youtube.com/embed/riru9OzScwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <div className="content">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit diam sapien, id dapibus nunc vehicula a. Morbi semper maximus ex. In hac habitasse platea dictumst. Morbi fermentum semper est vitae sollicitudin. Cras diam erat, pretium in quam in, venenatis pellentesque turpis. Sed odio massa, vestibulum iaculis aliquam ac, tempor vestibulum magna. Aliquam elementum justo vel consequat porta. Nullam a pretium libero. Nullam ac mi posuere, dignissim nisi eget, gravida tortor. Aliquam semper efficitur ante eget aliquet. 
+                </p>
+            </div>
+ 
+
         </div>
-        <div className="pSub1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non arcu non felis vestibulum auctor eu in sapien. Pellentesque sed semper nisl. Donec dignissim diam sit amet odio varius tincidunt. Morbi ac nisl eu felis eleifend vulputate in in dolor. Aenean suscipit erat sapien, non aliquet neque ullamcorper eget. Maecenas eleifend ut dolor ac iaculis. Praesent vitae efficitur mi, a posuere lectus. Proin purus sapien, viverra non justo non, egestas fringilla turpis. Sed pulvinar egestas lectus vel accumsan. Integer placerat massa ex, et bibendum odio fermentum et. Maecenas suscipit mauris sem, vitae suscipit erat sodales ac. Nunc efficitur ex eu ligula placerat, at vulputate turpis dictum. Suspendisse non tempor mauris, a accumsan magna. Ut lectus lorem, sodales nec sollicitudin lobortis, interdum ut nisl. </p>
-        </div>
-    </div>
+
+
+            
+        
+
+
 
     </div>
         
