@@ -67,3 +67,12 @@ el desmonatje se hace cuando el componente desaparece
 solo se llama un metodo llamada componenteWIllUnmount
 
 */
+
+
+
+/*Muchas veces es mejor renderizar csas en nodos diferentes 
+en este caso todo se renderiza en app en el reac dom
+pero react tiene algunas otras herramientas
+en este caso vamos a utiliz<ar los famosos 
+portales de react que funcionan como el react dom render
+pero en este caso lo que pasa es que se puede renderizar fuera de la app*/

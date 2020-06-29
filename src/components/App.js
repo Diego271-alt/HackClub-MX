@@ -10,7 +10,7 @@ import Home from '../pages/home'
 import NotFound from '../pages/NotFound'
 
 import Layout from '../components/layuot'
-import BadgeDetails from '../pages/BadgeDetails'
+import BadgeDetailsContainer from '../pages/BadgeDetailsContainer'
 //dentro de esta función vamos a integrar brouser router
 function App(){
     return (
@@ -40,7 +40,7 @@ function App(){
                 <Route exact path="/badges" component={Badges}/>
                 <Route exact path="/badges/new" component={BadgesNew}/>
                 <Route exact path="/badges/:badgeId/edit" component={BadgeEdit}/>
-                <Route exact path="/badges/:badgeId/details" component={BadgeDetails}/>
+                <Route exact path="/badges/:badgeId/details" component={BadgeDetailsContainer}/>
                 <Route component={NotFound} />
             </Switch>
         </Layout>
