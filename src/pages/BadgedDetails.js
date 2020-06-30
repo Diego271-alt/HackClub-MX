@@ -9,6 +9,17 @@ import Modal from '../components/Modal'
 
 import DeleteBadgeModal from '../components/DeleteBadgeModal'
 
+function useIncreaseCount(max) {
+    const [count , setCount]= React.useState(0)
+    if(count > max){
+        setCount(0)
+    }
+
+    return[count, setCount]
+
+}
+
+
 
 function BadgesDetails(props) {
     const badge =props.badge
@@ -19,6 +30,16 @@ function BadgesDetails(props) {
 
  /*el props isOpne nos sirve para saver si se va a mandar a llamar o si se va a desplegar el archivo en este caso 
  es como gacer una confirmacion */
+
+
+ /*en los hooks
+ podemos observar los hooks en este caso en React 
+ esta funcion nos va a regresar dos argumentos y los debemos de recibir
+ en la primera posicion debe de ir una variable en este caso igual que cuando ocupabamos el set state
+ el etado se puede inicializar en el argumento inicial del use set state
+  */
+    const [count, setCount ]= useIncreaseCount(4);
+
     return(
         <div>
         <div className="BadgeDetails__hero">
@@ -49,8 +70,11 @@ function BadgesDetails(props) {
                         Actions
                     </h2>
                     <div>
-                        <div><Link className="btn btn-primary mb-4" to={`/badges/${badge.id}/edit`}>Edit</Link></div>
-                    </div>
+                        <div>
+
+                            <Link className="btn btn-primary mb-4" to={`/badges/${badge.id}/edit`}>Edit</Link>
+                        </div>
+                    </div> 
                     <div>
                         <button onClick={props.onOpenModal}  className="btn btn-danger">Delete</button>
                         <DeleteBadgeModal 

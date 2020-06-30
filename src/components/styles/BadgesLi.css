@@ -95,4 +95,57 @@
     
 }
 
+.BadgesList .FiltroBadges{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    border: none;
 
+}
+.FiltroBadges{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    border: none;
+
+}
+
+.FiltroBadges label{
+    color: #f9fafc;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 25px;
+
+}
+
+.FiltroBadges input{
+    border: none;
+    border-bottom: 1px solid #e1306c;
+    color: #f9fafc;
+    background: rgba(23, 23, 29, 0.9);
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.FiltroBadges input::placeholder{
+    text-align: center;
+    color: #f1c40f;
+
+}
+
+.emptybadges {
+    display: flex;
+    flex-direction: column;
+}
+
+.emptybadges h3{
+    color:#f1c40f;
+    letter-spacing: 10px;
+}
+
+.emptybadges .FiltroBadges label{
+    display: none;
+}

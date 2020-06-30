@@ -76,3 +76,24 @@ pero react tiene algunas otras herramientas
 en este caso vamos a utiliz<ar los famosos 
 portales de react que funcionan como el react dom render
 pero en este caso lo que pasa es que se puede renderizar fuera de la app*/
+
+
+/*Los componententes funcionales no manejan estados y se hacen desde 
+las clases si es lo que vas a hacer ,anejar estados
+hooks
+por ejemplo
+perimte que los componentes funcionales tengan
+
+useState para manejar el estado 
+
+useEffect Para subir el componente al su ciclo de vida
+
+useReducer para ejecutar un efecto basado en una acción
+
+la regla es que cualquier hook en el nombre debe de empesar con use
+
+un hook nunca se puede implementar condiconalmente 
+
+
+
+*/

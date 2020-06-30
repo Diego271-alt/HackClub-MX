@@ -1,16 +1,14 @@
-.Badges__hero {
-    width: calc(100% - 20px);
-    margin: 0 auto;
-    padding: 2rem 0;
-    background: url('../../IMAGES/hackhero.png'), #1B1B25;
-    background-repeat:no-repeat;
-    margin-bottom: 1rem;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    border-radius:40px ;
+.BadgeNew__hero {
+  width:  100%;
+  height: 700px;
+  margin-bottom: 25px;
+ }
 
-  }
+ .BadgeNew__hero img{
+   width: inherit;
+   height: inherit;
+
+ }
   
   .Badges__hero>.Badges__container {
     display: flex;
@@ -31,6 +29,10 @@
     
     display: flex;
     justify-content: center;
+  
     margin-bottom: 1rem;
+  
     
   }
+
+  

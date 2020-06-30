@@ -5,6 +5,7 @@ import BadgesList from '../components/BadgesList'
 import { Link } from 'react-router-dom';
 import api from '../api'
 import PageLoading from '../components/pageLoading';
+import img1 from '../IMAGES/hackhero.jpg'
 
 import PageError from '../components/PageError';
 
@@ -160,9 +161,9 @@ class Badges extends React.Component{
             <React.Fragment>
                 
                 <div className="Badges">
-                    <div className="Badges__hero">
-
-                    </div>
+                 <div className="BadgeNew__hero">
+                  <img src={img1}/>
+                </div>
                 </div>
                 <div className="Badge__container">
                     <div className="Badges__buttons">
