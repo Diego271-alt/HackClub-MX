@@ -125,7 +125,7 @@ class BadgeEdit extends React.Component{
         <React.Fragment>
          
             <div className="BadgeEdit__hero">
-            </div>
+
             <div className="container">
                 <div className="row">
                     <div className="col-6">
@@ -142,9 +142,7 @@ class BadgeEdit extends React.Component{
                     </div>
 
                     <div className ="col-6"> 
-                    <h1 className="title">
-                    Edit Attendant
-                    </h1>
+        
                     <BadgeForm  
                         onChange={this.handleChange} 
                         formValues={this.state.form}
@@ -156,6 +154,7 @@ class BadgeEdit extends React.Component{
 
                 </div>
 
+            </div>
             </div>
         </React.Fragment>)
     }

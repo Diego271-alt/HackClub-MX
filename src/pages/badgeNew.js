@@ -98,8 +98,8 @@ class BadgeNew extends React.Component{
         <React.Fragment>
          
             <div className="BadgeNew__hero">
-                <img src={img1}/>
-            </div>
+              
+         
             <div className="container">
                 <div className="row">
                     <div className="col-6">
@@ -128,6 +128,7 @@ class BadgeNew extends React.Component{
 
                 </div>
 
+            </div>
             </div>
         </React.Fragment>)
     }

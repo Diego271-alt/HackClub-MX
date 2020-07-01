@@ -57,7 +57,7 @@ class BadgeForm extends React.Component{
 
                 <form onSubmit={this.props.onSubmit} >
                 <h1 className="title">
-                    New Comment
+                   Register
                 </h1>
                     <div className="form-group">
                         <label >First Name 🥇</label>
